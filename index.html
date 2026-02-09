@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Ростелеком | Цифровая Территория</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="top-bar animate__animated animate__fadeInDown">
+        <div class="container">
+            <div class="logo-group">
+                <span class="rt-logo">Ростелеком</span>
+                <span class="office-label">ПРОЕКТНЫЙ ОФИС</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-minimal">
+        <div class="container">
+            <h1 class="animate__animated animate__fadeInUp">Цифровая<br>территория</h1>
+            <p class="animate__animated animate__fadeInUp" style="animation-delay: 0.5s;">
+                Промышленная автоматизация и импортозамещение: от интеллектуальных систем безопасности до роботизированных линий.
+            </p>
+            <button class="scroll-btn animate__animated animate__fadeInUp" style="animation-delay: 0.8s;" onclick="document.getElementById('territory-section').scrollIntoView({behavior:'smooth'})">
+                Инфраструктура проекта ↓
+            </button>
+        </div>
+    </section>
+
+    <nav class="nav-container container">
+        <div class="nav-item animate__animated animate__zoomIn" onclick="openSlide('robotics')" style="background-image: url('https://i.ibb.co/1GtNrqPj/image.png');">
+            <div class="nav-overlay"></div>
+            <h3>Роботизация производства</h3>
+        </div>
+        <div class="nav-item animate__animated animate__zoomIn" onclick="openSlide('quality')" style="background-image: url('https://i.ibb.co/6dL0hc9/image.png');">
+            <div class="nav-overlay"></div>
+            <h3>Контроль качества</h3>
+        </div>
+        <div class="nav-item animate__animated animate__zoomIn" onclick="openSlide('security')" style="background-image: url('https://i.ibb.co/XZ65YFQb/image.png');">
+            <div class="nav-overlay"></div>
+            <h3>Средства охраны</h3>
+        </div>
+        <div class="nav-item animate__animated animate__zoomIn" onclick="openSlide('eco')" style="background-image: url('https://i.ibb.co/KpVNHXKx/image.png');">
+            <div class="nav-overlay"></div>
+            <h3>Безопасность и Эко</h3>
+        </div>
+        <div class="nav-item animate__animated animate__zoomIn" onclick="openSlide('equipment')" style="background-image: url('https://i.ibb.co/hR5NBkZq/image.png');">
+            <div class="nav-overlay"></div>
+            <h3>Тех. оборудование</h3>
+        </div>
+    </nav>
+
+    <section id="territory-section" class="territory-info">
+        <div class="container">
+            <h2 class="t-header">Инфраструктура территории</h2>
+            <div class="t-grid">
+                <div class="t-card">
+                    <h4>Private LTE/5G</h4>
+                    <p>Создание выделенной сети для бесперебойной работы беспилотников и IoT-датчиков в любой точке предприятия.</p>
+                </div>
+                <div class="t-card">
+                    <h4>Кибербезопасность</h4>
+                    <p>Защита контура АСУ ТП и критической инфраструктуры согласно государственным стандартам.</p>
+                </div>
+                <div class="t-card">
+                    <h4>Сквозная аналитика</h4>
+                    <p>Интеграция данных всех систем в единый ситуационный центр.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal" class="modal-overlay hidden">
+        <div class="modal-window">
+            <button class="sticky-close" onclick="closeSlide()">× ЗАКРЫТЬ</button>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
